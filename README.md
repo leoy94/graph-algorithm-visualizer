@@ -1,1 +1,1 @@
-# graph-algorithm-visualizer-
+# graph-algorithm-visualizer
