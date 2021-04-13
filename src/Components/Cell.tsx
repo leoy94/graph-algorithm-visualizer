@@ -6,7 +6,6 @@ function editCell (blockOrUnBlock: any, setStart: any, setEnd: any, clearFrames:
     return (e: {button: number, buttons: number, preventDefault: () => void, type: string, ctrlKey: boolean },id: number) => {
         if(e.type === 'mousedown' || e.type === "mouseenter"){
             if(e.ctrlKey && e.buttons===1){
-                // console.log("block", e.type, "id", id);
                 e.preventDefault();
 
                 blockOrUnBlock(id);
@@ -47,25 +46,25 @@ function Cell(props: {id: number, blockOrUnBlock?: any, setStart?: any, setEnd?:
         });
 
     let getBackgroundColor = (blocked: boolean, start: number, end: number) => {
-        let backgroundColor = "slategrey";
+        let backgroundColor = "#32325d";
 
         if(end === focusedNode && inSolution && id!=start && id!=end){
-            backgroundColor = "lightgreen";
+            backgroundColor = "#2dce89";
         }
         else if(id === focusedNode && end !==focusedNode){
-            backgroundColor = "green"
+            backgroundColor = "#ffd600"
         }
-        else if(start === id){
-            backgroundColor = "yellow"
-        }
-        else if(end === id) {
-            backgroundColor = "orange"
+        // else if(start === id){
+        //     backgroundColor = "#e14eca"
+        // }
+        else if(end === id || start === id) {
+            backgroundColor = "lightcoral"
         }
         else if (visited) {
-            backgroundColor = "lightblue"
+            backgroundColor = "#11cdef"
         }
         else if (blocked) {
-            backgroundColor = "black"
+            backgroundColor = "#e14eca"
         }
         return backgroundColor;
     }
@@ -85,9 +84,10 @@ function Cell(props: {id: number, blockOrUnBlock?: any, setStart?: any, setEnd?:
                 minWidth:"15px",
                 fontSize: "10px",
                 padding: "0",
-                margin: "0"
+                margin: "0",
+                textAlign: "center"
             }}>
-                {start===id ? "start": ""}{end===id ? "end": ""}
+                {start===id ? "s": ""}{end===id ? "e": ""}
             </div>
         </div>
     );

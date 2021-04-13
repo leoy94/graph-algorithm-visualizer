@@ -5,6 +5,7 @@ import SideBar from "./Components/SideBar";
 import {store} from "./Redux/Store/store";
 import {Provider} from "react-redux";
 import {actions} from "./Redux/Actions/actionTypes";
+import VApp from "./views/App.js";
 
 
 //this is used to play and pause without having to rely on the useEffect Hook
@@ -26,17 +27,15 @@ let animatorEventTrigger = async () => {
 let unsuscribe = animatorEventTrigger();
 
 function App(): JSX.Element {
-  let nbsp = String.fromCharCode(160);
   return (
-    <div className="App" style={{
+    <div className="index-page" style={{
       backgroundColor: "#282c34",
       height: "100vh",
       color: "white",
       display: "flex"
     }}>
         <Provider store={store}>
-        <SideBar></SideBar>
-        <Graph></Graph>
+        <VApp SideBar={SideBar} Graph={Graph}></VApp>
         </Provider>
     </div>
 

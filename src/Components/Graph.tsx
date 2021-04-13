@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
 import Cell from "./Cell";
+import VGraph from "../views/IndexSections/Graph.js";
 
 //need to figure out a way to do this in nlogn or n
 function createRows(size: any){
@@ -32,13 +33,9 @@ function createRows(size: any){
 }
 
 function Graph (props: any): JSX.Element{
-    // const animator = useSelector((state: {animator: any}) => state.animator);
-    // console.log(animator);
 
         return (
-            <div className="graph" style={{marginRight: "50px"}}>
-                {createRows(props.size)}
-            </div>
+            <VGraph createRows={createRows} size={props.size}></VGraph>
         );
 }
 
@@ -46,7 +43,6 @@ function mapStateToProps(state: {size?: {height: number, width: number}, gameboa
     // console.log(state);
     return ({
         size: state.size,
-        // adjList: state.gameboard as IAdjList
     });
 }
 

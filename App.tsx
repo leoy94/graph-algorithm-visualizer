@@ -27,13 +27,19 @@ let unsuscribe = animatorEventTrigger();
 
 function App(): JSX.Element {
   let nbsp = String.fromCharCode(160);
+    const wrapper = React.useRef(null);
+    React.useEffect(() => {
+        document.documentElement.scrollTop = 0;
+        document.scrollingElement.scrollTop = 0;
+        wrapper.current.scrollTop = 0;
+        document.body.classList.add("index-page");
+        return function cleanup() {
+            document.body.classList.remove("index-page");
+        };
+    }, []);
+
   return (
-    <div className="App" style={{
-      backgroundColor: "#282c34",
-      height: "100vh",
-      color: "white",
-      display: "flex"
-    }}>
+    <div>
         <Provider store={store}>
         <SideBar></SideBar>
         <Graph></Graph>

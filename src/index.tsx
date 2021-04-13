@@ -5,6 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {enableMapSet} from "immer";
 
+// styles
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "assets/css/nucleo-icons.css";
+import "assets/scss/blk-design-system-pro-react.scss?v1.2.0";
+import "assets/demo/demo.css";
+import "assets/demo/react-demo.css";
+
 enableMapSet();
 
 ReactDOM.render(
