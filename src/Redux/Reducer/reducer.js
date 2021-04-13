@@ -43,6 +43,7 @@ export const reducer = (state = {}, action) => {
                 draftState.animator.visitedNodes.clear();
                 draftState.animator.isPaused = true;
             })
+            return nextState;
         case actions.clearFrames:
             nextState = produce(state, draftState => {
                 draftState.animator.currentFrame = 0;

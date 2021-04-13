@@ -26,7 +26,7 @@ import {
   TabPane,
   Container,
   Row,
-  Col, CardBody, CardFooter, Card, Button, ButtonGroup, Badge,
+  Col, CardBody, Card, Button, ButtonGroup, Badge,
 } from "reactstrap";
 
 import Slider from "nouislider";

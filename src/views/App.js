@@ -19,17 +19,8 @@ import React from "react";
 import {
   Container,
   Row,
-  Col, CardBody, CardTitle, CardFooter, Button, Card,
+  Col
 } from "reactstrap";
-
-// core components
-// import ColorNavbar from "components/Navbars/ColorNavbar.js";
-// import IndexHeader from "components/Headers/IndexHeader.js";
-// import DemoFooter from "components/Footers/DemoFooter.js";
-
-// Sections for this page
-// (we've divided this page into multiple react components to make it a bit more readable)
-// import Pills from "./IndexSections/SamplePill.js";
 
 export default function Index(props) {
   const wrapper = React.useRef(null);
@@ -52,17 +43,16 @@ export default function Index(props) {
               <Col xs={12} sm={12} md={6} lg={7} xl={6} style={{padding: "0"}}>
                   <Container style={{margin: "0", width: "100%", height: "100%", maxWidth: "1500px", display:"flex", justifyContent: "center"}}>
                     <Row style={{padding: "0", width: "100%", height: "100%"}}>
-                      <Graph/>
+                      {/*<Graph/>*/}
                     </Row>
                   </Container>
               </Col>
               <Col xs={12} sm={12} md={6} lg={5} xl={3} style={{padding: "0"}}>
-                <SideBar />
+                {/*<SideBar />*/}
               </Col>
             </Row>
           </Container>
         </div>
-        {/*<DemoFooter />*/}
     </>
   );
 }

@@ -139,8 +139,7 @@ export class GraphAnimator extends Animator implements IGraphAnimator{
             //
             // }
             try{
-                // if(typeof graph[alg])
-                let algFunction = graph[alg];
+                // if(typeof graph[alg]);
                 // console.log(graph[alg](start, end, size));
                 let {frames, path} = graph[alg](start, end, size);
                 this.frames = frames;

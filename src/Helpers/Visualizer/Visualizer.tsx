@@ -1,6 +1,6 @@
 import {IAdjList, AdjList} from "../AdjList/AdjList";
 import {immerable} from "immer";
-import {IAnimator, Animator, GraphAnimator} from "../Animations/Animator";
+import {IAnimator, GraphAnimator} from "../Animations/Animator";
 
 enum defAlgs {
     default

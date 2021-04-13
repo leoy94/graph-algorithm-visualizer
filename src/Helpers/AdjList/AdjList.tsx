@@ -71,7 +71,7 @@ export class AdjList extends Map implements IAdjList{
             }
 
             //if the desired vertex is found print the path
-            if(current == end){
+            if(current === end){
                 let path = [current];
 
                 while(last > -1){
@@ -126,7 +126,7 @@ export class AdjList extends Map implements IAdjList{
             }
 
             //if the desired vertex is found print the path
-            if(current == end){
+            if(current === end){
                 let path = [current];
                 while(last > -1){
                     path.unshift(last);

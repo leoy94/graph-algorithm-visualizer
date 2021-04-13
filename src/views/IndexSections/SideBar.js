@@ -26,7 +26,7 @@ import {
   TabPane,
   Container,
   Row,
-  Col, CardBody, CardFooter, Card, Button, ButtonGroup, Badge,
+  Col, CardBody, Card, Button, ButtonGroup, Badge,
 } from "reactstrap";
 
 import Slider from "nouislider";
@@ -38,8 +38,6 @@ export default function Pills(props) {
 
   const slider2 = React.useRef(null);
   const [slider2Value, setSlider2Value] = React.useState("20");
-
-  const [singleSelect, setSingleSelect] = React.useState(null);
 
 
   const [vTabs, setvTabs] = React.useState(1);
@@ -69,16 +67,7 @@ export default function Pills(props) {
 
   React.useEffect(() => {
     props.handleSizeChange({width: slider1Value, height: slider2Value});
-  }, [slider1Value, slider2Value])
-
-  let disablePause = true;
-  let disablePlay = false;
-
-  React.useEffect(() => {
-    console.log("changed!")
-  }, [props.isPaused])
-
-
+  }, [slider1Value, slider2Value, props])
 
   const toggleTabs = (e, stateName, index) => {
     e.preventDefault();

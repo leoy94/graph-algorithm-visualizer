@@ -48,7 +48,7 @@ function Cell(props: {id: number, blockOrUnBlock?: any, setStart?: any, setEnd?:
     let getBackgroundColor = (blocked: boolean, start: number, end: number) => {
         let backgroundColor = "#32325d";
 
-        if(end === focusedNode && inSolution && id!=start && id!=end){
+        if(end === focusedNode && inSolution && id!==start && id!==end){
             backgroundColor = "#2dce89";
         }
         else if(id === focusedNode && end !==focusedNode){
