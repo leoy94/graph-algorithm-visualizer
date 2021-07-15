@@ -40,14 +40,14 @@ export default function Index(props) {
       <div className="wrapper" ref={wrapper} style={{width: "100%", display: "flex", justifyContent: "center"}}>
           <Container  style={{margin: "0", minWidth: "100%", marginBottom: "20px"}}>
             <Row xs={12} style={{padding: "0", display: "flex", justifyContent: "center", alignItems:"center"}}>
-              <Col xs={12} sm={12} md={6} lg={7} xl={6} style={{padding: "0"}}>
+              <Col xs={12} sm={12} md={7} lg={7} xl={6} style={{padding: "0"}}>
                   <Container style={{margin: "0", width: "100%", height: "100%", maxWidth: "1500px", display:"flex", justifyContent: "center"}}>
                     <Row style={{padding: "0", width: "100%", height: "100%"}}>
                       <Graph/>
                     </Row>
                   </Container>
               </Col>
-              <Col xs={12} sm={12} md={6} lg={5} xl={3} style={{padding: "0"}}>
+              <Col xs={12} sm={12} md={5} lg={5} xl={4} style={{padding: "0"}}>
                 <SideBar />
               </Col>
             </Row>

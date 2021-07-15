@@ -1,15 +1,11 @@
-export interface IFrame {
-    processed: boolean;
-    payload: any;
-    animation: string;
-}
+import {IFrame} from "./IFrame";
 
 export class Frame implements IFrame {
     processed: boolean = false;
     animation = "default";
-    payload = {};
+    payload;
 
-    constructor(animation: string, payload: any) {
+    constructor(animation: string, payload: {id: number}) {
         this.payload = payload;
         this.animation = animation;
     }

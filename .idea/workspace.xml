@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7104bcc-a9d1-441e-b5d0-a1902ac531f5" name="Default Changelist" comment="" />
+    <list default="true" id="e7104bcc-a9d1-441e-b5d0-a1902ac531f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/IndexSections/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/IndexSections/SideBar.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +19,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="NamedScopeManager">
     <scope name="Unnamed" pattern="file[graph-algorithm-visualizer-merge]:src/assets/scss/*||file[graph-algorithm-visualizer-merge]:src/components/*||file[graph-algorithm-visualizer-merge]:src/views/*" />
   </component>
   <component name="ProjectId" id="1r8hgaUhT3HMtq4YthutyqylDpR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,10 +62,27 @@
       <updated>1618363740162</updated>
       <workItem from="1618363742755" duration="40000" />
       <workItem from="1618363892287" duration="3565000" />
+      <workItem from="1618370845824" duration="305000" />
+      <workItem from="1618610675068" duration="1969000" />
+      <workItem from="1618932509976" duration="1762000" />
+      <workItem from="1619303923516" duration="595000" />
+      <workItem from="1619528743287" duration="1683000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
