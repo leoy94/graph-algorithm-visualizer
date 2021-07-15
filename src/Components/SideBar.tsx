@@ -1,13 +1,12 @@
-import React from 'react';
-import {connect, useSelector} from 'react-redux';
-import {useState} from "react";
-import {actions} from "../Redux/Actions/actionTypes"
+import { connect, useSelector } from 'react-redux';
+import { useState } from "react";
+import { actions } from "../Redux/Actions/actionTypes"
 import VSideBar from "../views/IndexSections/SideBar.js"
 
 function SideBar(props: any): JSX.Element {
-    const [size, setSize] = useState({height: 5, width: 5});
-    const handleSizeChange = (size: {height: number, width: number}) => {
-            setSize({...size});
+    const [size, setSize] = useState({ height: 5, width: 5 });
+    const handleSizeChange = (size: { height: number, width: number }) => {
+        setSize({ ...size });
     }
 
     const setAlg = (value: any) => props.setAlg(value);
@@ -23,7 +22,7 @@ function SideBar(props: any): JSX.Element {
         props.createGameBoard(size);
     };
 
-return (
+    return (
         <VSideBar
             size={size}
             handleSizeChange={handleSizeChange}
@@ -38,7 +37,7 @@ return (
     );
 }
 
-function mapStateToProps(state:{currentAlg: string,size: {height: number, width: number}, animator: {currentFrame: number, isPaused: boolean}}): any {
+function mapStateToProps(state: { currentAlg: string, size: { height: number, width: number }, animator: { currentFrame: number, isPaused: boolean } }): any {
     return ({
         size: state.size,
         currentFrame: state.animator.currentFrame,
@@ -47,14 +46,13 @@ function mapStateToProps(state:{currentAlg: string,size: {height: number, width:
     });
 }
 
-function mapDispatchToProps(dispatch: any){
+function mapDispatchToProps(dispatch: any) {
     return ({
-        createGameBoard: (size: {height: number, width: number}) => dispatch({type: actions.createGraph, payload: {...size}}),
-        pause: () => dispatch({type: actions.pause}),
-        play: () => dispatch({type: actions.play}),
-        // generateFrames: () => dispatch({type: actions.generateFrames})
-        resetAnimator: () => dispatch({type: actions.resetAnimator}),
-        setAlg: (alg:string) => dispatch({type: actions.setAlg, payload: {alg: alg}})
+        createGameBoard: (size: { height: number, width: number }) => dispatch({ type: actions.createGraph, payload: { ...size } }),
+        pause: () => dispatch({ type: actions.pause }),
+        play: () => dispatch({ type: actions.play }),
+        resetAnimator: () => dispatch({ type: actions.resetAnimator }),
+        setAlg: (alg: string) => dispatch({ type: actions.setAlg, payload: { alg: alg } })
     });
 }
 

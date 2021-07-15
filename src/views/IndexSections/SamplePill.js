@@ -26,13 +26,13 @@ import {
   TabPane,
   Container,
   Row,
-  Col, CardBody, Card, Button, ButtonGroup, Badge,
+  Col, CardBody, CardFooter, Card, Button, ButtonGroup, Badge,
 } from "reactstrap";
 
 import Slider from "nouislider";
 import Select from "react-select";
 
-export default function Pills(props) {
+export default function Pills() {
   const slider1 = React.useRef(null);
   const [slider1Value, setSlider1Value] = React.useState("20");
 
@@ -42,7 +42,12 @@ export default function Pills(props) {
   const [singleSelect, setSingleSelect] = React.useState(null);
 
 
+  const [hTabs, sethTabs] = React.useState(1);
   const [vTabs, setvTabs] = React.useState(1);
+  const [hiTabs, sethiTabs] = React.useState(1);
+  const [viTabs, setviTabs] = React.useState(1);
+  const [ihTabs, setihTabs] = React.useState(1);
+  const [ivTabs, setivTabs] = React.useState(1);
 
   React.useEffect(() => {
     try{
@@ -71,8 +76,23 @@ export default function Pills(props) {
   const toggleTabs = (e, stateName, index) => {
     e.preventDefault();
     switch (stateName) {
+      case "hTabs":
+        sethTabs(index);
+        break;
       case "vTabs":
         setvTabs(index);
+        break;
+      case "hiTabs":
+        sethiTabs(index);
+        break;
+      case "viTabs":
+        setviTabs(index);
+        break;
+      case "ihTabs":
+        setihTabs(index);
+        break;
+      case "ivTabs":
+        setivTabs(index);
         break;
       default:
     }
@@ -131,14 +151,14 @@ export default function Pills(props) {
                                 <div className='text-success' style={{display: "flex", alignItems:"center", marginBottom: "15px"}}>
                                   <span style={{marginRight: "5px"}}>Width</span>
                                 {/*<label>{slider1}</label>*/}
-                                  <Badge color="info" className="ml-1" style={{margin: 0}}>{props.size.width}</Badge>
+                                  <Badge color="info" className="ml-1" style={{margin: 0}}>{slider1Value}</Badge>
                                 </div>
                                 <div className="slider" ref={slider1}/>
                               </div>
                               <div style={{marginBottom: "10px"}}>
                                 <div className='text-success' style={{display: "flex", alignItems:"center", marginBottom: "15px"}}>
                                   <span style={{marginRight: "5px"}}>Height</span>
-                                  <Badge color="info" className="ml-1" style={{margin: 0}}>{props.size.height}</Badge>
+                                  <Badge color="info" className="ml-1" style={{margin: 0}}>{slider2Value}</Badge>
                                 </div>
                                 <div className="slider" ref={slider2} />
                               </div>

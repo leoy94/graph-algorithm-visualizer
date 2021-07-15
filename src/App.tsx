@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Graph from "./Components/Graph";
-import SideBar from "./Components/SideBar";
+import Graph from "./components/Graph";
+import SideBar from "./components/SideBar";
 import {store} from "./Redux/Store/store";
 import {Provider} from "react-redux";
 import {actions} from "./Redux/Actions/actionTypes";
@@ -29,7 +29,7 @@ let unsuscribe = animatorEventTrigger();
 function App(): JSX.Element {
   return (
     <div className="index-page" style={{
-      backgroundColor: "#282c34",
+      // backgroundColor: "#282c34",
       height: "100vh",
       color: "white",
       display: "flex"

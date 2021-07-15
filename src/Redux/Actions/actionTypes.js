@@ -15,10 +15,9 @@ export const actions = {
     //animator actions
     pause: "pause",
     play: "play",
-    processNextFrame: "getNext",
     generateFrames: "generateFrames",
+    processNextFrame: "getNext",
     clearFrames: "clearFrames",
     resetAnimator: "resetAnimator"
-
 }
 

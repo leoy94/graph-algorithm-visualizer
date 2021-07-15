@@ -67,7 +67,7 @@ export default function Pills(props) {
 
   React.useEffect(() => {
     props.handleSizeChange({width: slider1Value, height: slider2Value});
-  }, [slider1Value, slider2Value, props])
+  }, [slider1Value, slider2Value])
 
   const toggleTabs = (e, stateName, index) => {
     e.preventDefault();
@@ -158,6 +158,7 @@ export default function Pills(props) {
                               className="react-select react-select-primary mb-2"
                               classNamePrefix="react-select"
                               name="singleSelect"
+                              defaultValue={ {label: "breadth-first search", value: "bfs" }}
                               value={props.alg}
                               onChange={(value) => props.setAlg(value.value)}
                               isSearchable={false}
@@ -168,14 +169,16 @@ export default function Pills(props) {
                                   // isDisabled: true,
                                 },
                                 { value: "dfs", label: "depth-first search" },
-                                { value: "biDir", label: "bi-directional search" },
+                                // { value: "biDir", label: "bi-directional search" },
                               ]}
                               placeholder="Single Select"
                           />
                           </div>
-                          <ButtonGroup style={{display: "flex", justifyContent: "center"}}>
-                            <Button size={"sm"}  color={"success"} disabled={!props.isPaused} onClick={props.handlePlay}>Play</Button>
-                            <Button size={"sm"} color={"warning"} disabled={props.isPaused} onClick={props.handlePause}>Pause</Button>
+                          <ButtonGroup style={{display: "flex", justifyContent: "center", width: "100%", fontSize: "10px"}}>
+                            {props.isPaused?
+                                <Button size={"sm"}  color={"success"} disabled={!props.isPaused} onClick={props.handlePlay}>Play</Button>:
+                                <Button size={"sm"} color={"warning"} disabled={props.isPaused} onClick={props.handlePause}>Pause</Button>
+                            }
                             <Button size={"sm"} color={"primary"} onClick={props.handleReset}>Reset</Button>
                           </ButtonGroup>
                           </div>
