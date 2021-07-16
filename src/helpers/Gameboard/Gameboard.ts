@@ -52,21 +52,18 @@ export class Gameboard extends AbsGameboard implements IGameboard {
         return 0;
     }
 
-    //action 1
-    //generate frames is failing for some reason (prototype is working odd)
     public generateFrames(): number {
         this.reset(false, false, false, true);
         this.animator.generateFrames(this.gameboard, this.currentAlg, this.size, this.startVertexid, this.endVertexid);
         return 0;
     }
 
-    //action 2
+
     public processNextFrame(): number {
         this.animator.processFrame();
         return 0;
     }
 
-    //action 3
     public play(): number {
         this.animator.isPaused = false;
         if (this.animator.frames.size === 0) {
@@ -75,7 +72,6 @@ export class Gameboard extends AbsGameboard implements IGameboard {
         return 0;
     }
 
-    //action 4
     public pause(): number{
         this.animator.isPaused = true;
         return 0;

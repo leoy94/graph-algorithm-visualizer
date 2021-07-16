@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19cb4cf3-537a-4591-a3bc-e9d5497d845b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/helpers/Algs/Algs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/Algs/IAlgs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/Errors/VertexErrors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/Gameboard/ISize.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/Vertex/IVertexPayload.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/AdjList/AdjList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/AdjList/AdjList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/AdjList/IAdjList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/AdjList/IAdjList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Animator/AbsAnimator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Animator/AbsAnimator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/IndexSections/Cell.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Cell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Cell.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/Animator/GameboardAnimator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Animator/GameboardAnimator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Animator/IAnimator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Animator/IAnimator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Animator/IGameboardAnimator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Animator/IGameboardAnimator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Gameboard/AbsGameboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Gameboard/AbsGameboard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/Gameboard/Gameboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Gameboard/Gameboard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Gameboard/IGameboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Gameboard/IGameboard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Gameboard/IGameboardCore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Gameboard/IGameboardCore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Vertex/IVertex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Vertex/IVertex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Vertex/IVisualizerVertex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Vertex/IVisualizerVertex.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/Vertex/Vertex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Vertex/Vertex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/Vertex/VisualizerVertex.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/Vertex/VisualizerVertex.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/IndexSections/SamplePill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Sample.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -73,12 +60,18 @@
       <option name="presentableId" value="Default" />
       <updated>1626398977524</updated>
       <workItem from="1626398980453" duration="395000" />
-      <workItem from="1626399821368" duration="7305000" />
+      <workItem from="1626399821368" duration="8232000" />
+      <workItem from="1626451502208" duration="2225000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/views/IndexSections/Cell.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -90,5 +83,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

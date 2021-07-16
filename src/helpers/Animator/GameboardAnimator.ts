@@ -7,10 +7,13 @@ import {IFrame} from "./IFrame";
 export class GameboardAnimator extends AbsAnimator implements IGameboardAnimator {
     [s: string]: null | any;
     public focusedNode: number | null = null;
+
+    //could have stored this in the vertex payload but with this config we can access O(1) lookup
+    //rather than having to search through the adjacency list at 0(n^2) on each vertex
     public visitedNodes = new Map<number, number>();
     public solutionNodes = new Map<number, number>();
 
-    isLastFrame(frameID: number): boolean {
+    public isLastFrame(frameID: number): boolean {
         let condition = this.frames.size === frameID ? true : false;
         return condition;
     }

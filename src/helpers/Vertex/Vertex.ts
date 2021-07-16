@@ -72,8 +72,7 @@ export class Vertex implements IVertex {
     }
 
     public unBlock(): number {
-        let { blocked } = this.payload;
-        blocked = false;
+        this.payload.blocked = false;
         return 0;
     }
 
