@@ -2,16 +2,15 @@ import {IFrame} from "./IFrame";
 import {IAnimator} from "./IAnimator";
 
 export abstract class AbsAnimator implements IAnimator {
-    animations = new Map<string, string>();
-    frames = new Map();
-    currentFrame = 0;
-    isPaused: boolean = true;
+    public frames = new Map();
+    public currentFrame = 0;
+    public isPaused: boolean = true;
 
-    addFrame(frame: IFrame) {
+    public addFrame(frame: IFrame) {
         this.frames.set(this.frames.size, frame);
     }
 
-    removeFrame(name: number) {
+    public removeFrame(name: number) {
         try {
             const frame = this.getFrame(name);
             this.frames.delete(name);
@@ -22,7 +21,7 @@ export abstract class AbsAnimator implements IAnimator {
         }
     }
 
-    getFrame(name: number): IFrame | null {
+    public getFrame(name: number): IFrame | null {
         try {
             return this.frames.get(name);
         } catch (e) {

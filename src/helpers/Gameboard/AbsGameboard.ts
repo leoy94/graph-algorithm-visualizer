@@ -10,10 +10,10 @@ enum defAlgs {
 }
 
 export abstract class AbsGameboard implements IGameboardCore {
-    name: string = "default";
-    gameboard: AdjList = new AdjList();
-    currentAlg: string = defAlgs[0];
-    algs: any = defAlgs;
+    public name: string = "default";
+    public gameboard: AdjList = new AdjList();
+    public currentAlg: string = defAlgs[0];
+    public algs: any = defAlgs;
 
     public size = {
         height: 20,
@@ -22,7 +22,7 @@ export abstract class AbsGameboard implements IGameboardCore {
 
     [immerable] = true;
 
-    createGameboard: () => IAdjList = () => {
+    public createGameboard(): IAdjList {
         this.gameboard = new AdjList();
         const { height, width } = this.size;
         const totalCells = height * width;
@@ -44,7 +44,6 @@ export abstract class AbsGameboard implements IGameboardCore {
         }
 
         this.createGameboard();
-        console.log(this.gameboard);
         if (algs) {
             this.algs = algs;
         }

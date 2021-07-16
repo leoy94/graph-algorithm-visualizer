@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/graph-algorithm-visualizer/static/css/main.8bbe3ded.chunk.css",
-    "main.js": "/graph-algorithm-visualizer/static/js/main.f9de4180.chunk.js",
-    "main.js.map": "/graph-algorithm-visualizer/static/js/main.f9de4180.chunk.js.map",
-    "runtime-main.js": "/graph-algorithm-visualizer/static/js/runtime-main.0d2bafc8.js",
-    "runtime-main.js.map": "/graph-algorithm-visualizer/static/js/runtime-main.0d2bafc8.js.map",
-    "static/js/2.3026d94b.chunk.js": "/graph-algorithm-visualizer/static/js/2.3026d94b.chunk.js",
-    "static/js/2.3026d94b.chunk.js.map": "/graph-algorithm-visualizer/static/js/2.3026d94b.chunk.js.map",
-    "static/js/3.ee6e10a8.chunk.js": "/graph-algorithm-visualizer/static/js/3.ee6e10a8.chunk.js",
-    "static/js/3.ee6e10a8.chunk.js.map": "/graph-algorithm-visualizer/static/js/3.ee6e10a8.chunk.js.map",
+    "main.css": "/graph-algorithm-visualizer/static/css/main.2b3b7f81.chunk.css",
+    "main.js": "/graph-algorithm-visualizer/static/js/main.2f418eef.chunk.js",
+    "main.js.map": "/graph-algorithm-visualizer/static/js/main.2f418eef.chunk.js.map",
+    "runtime-main.js": "/graph-algorithm-visualizer/static/js/runtime-main.72823492.js",
+    "runtime-main.js.map": "/graph-algorithm-visualizer/static/js/runtime-main.72823492.js.map",
+    "static/css/2.3c0fd8d6.chunk.css": "/graph-algorithm-visualizer/static/css/2.3c0fd8d6.chunk.css",
+    "static/js/2.2bc6510e.chunk.js": "/graph-algorithm-visualizer/static/js/2.2bc6510e.chunk.js",
+    "static/js/2.2bc6510e.chunk.js.map": "/graph-algorithm-visualizer/static/js/2.2bc6510e.chunk.js.map",
     "index.html": "/graph-algorithm-visualizer/index.html",
-    "static/css/main.8bbe3ded.chunk.css.map": "/graph-algorithm-visualizer/static/css/main.8bbe3ded.chunk.css.map",
-    "static/js/2.3026d94b.chunk.js.LICENSE.txt": "/graph-algorithm-visualizer/static/js/2.3026d94b.chunk.js.LICENSE.txt"
+    "static/css/2.3c0fd8d6.chunk.css.map": "/graph-algorithm-visualizer/static/css/2.3c0fd8d6.chunk.css.map",
+    "static/css/main.2b3b7f81.chunk.css.map": "/graph-algorithm-visualizer/static/css/main.2b3b7f81.chunk.css.map",
+    "static/js/2.2bc6510e.chunk.js.LICENSE.txt": "/graph-algorithm-visualizer/static/js/2.2bc6510e.chunk.js.LICENSE.txt",
+    "static/js/main.2f418eef.chunk.js.LICENSE.txt": "/graph-algorithm-visualizer/static/js/main.2f418eef.chunk.js.LICENSE.txt",
+    "static/media/blk-design-system-pro-react.scss?v1.2.0": "/graph-algorithm-visualizer/static/media/square5.6d2ad2cb.png",
+    "static/media/all.min.css": "/graph-algorithm-visualizer/static/media/fa-solid-900.46fdbd2d.woff",
+    "static/media/nucleo-icons.css": "/graph-algorithm-visualizer/static/media/nucleo.bd5cce8b.eot"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d2bafc8.js",
-    "static/js/2.3026d94b.chunk.js",
-    "static/css/main.8bbe3ded.chunk.css",
-    "static/js/main.f9de4180.chunk.js"
+    "static/js/runtime-main.72823492.js",
+    "static/css/2.3c0fd8d6.chunk.css",
+    "static/js/2.2bc6510e.chunk.js",
+    "static/css/main.2b3b7f81.chunk.css",
+    "static/js/main.2f418eef.chunk.js"
   ]
 }

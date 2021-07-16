@@ -1,15 +1,17 @@
 import {Vertex} from "./Vertex";
 import {IVisualizerVertex} from "./IVisualizerVertex";
 import {IAdjList} from "../AdjList/IAdjList";
+import {ISize} from "../Gameboard/ISize";
+import {IVertex} from "./IVertex";
 
 export class VisualizerVertex extends Vertex implements IVisualizerVertex {
     public getCoordinates(vertexId: number, height: number, width: number) {
         let y: number = Math.ceil(vertexId / width);
         let x: number = width - (y * width - vertexId);
-        return { x, y };
+        return { x,  y };
     }
 
-    public getEdges(size: { height: number, width: number }, adjList: IAdjList) {
+    public getEdges(size: ISize, adjList: IAdjList): any{
         const { height, width } = size;
         let gameEdges: number[] = [];
 
@@ -83,6 +85,7 @@ export class VisualizerVertex extends Vertex implements IVisualizerVertex {
         }
 
         this.edges = gameEdges;
+
         return gameEdges;
     }
 }

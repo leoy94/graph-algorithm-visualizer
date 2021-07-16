@@ -1,16 +1,40 @@
 import { IVertex } from "./IVertex";
+import {errors as vertexErrors} from "../Errors/VertexErrors";
+import {Payload as IVertexPayload} from "./IVertexPayload";
 
 export class Vertex implements IVertex {
-    id: number = -1;
-    payload = { blocked: false };
-    edges: number[] = [];
+    private _id_: number = -1;
+    public payload: IVertexPayload = { blocked: false };
+    public edges: number[] = [];
 
-    constructor(payload: any, id: number) {
+    public constructor(payload: any, id: number) {
         this.payload = payload;
-        this.id = id;
+        this._id_ = id;
     }
 
-    addEdge(edge: number) {
+    public get id(): number{
+        try{
+            if(this._id_ === -1){
+                throw new Error(vertexErrors.vertexNotFound);
+            }
+        }catch(e){
+            console.log(e);
+        }
+        return this._id_;
+    }
+
+    public set id(id: number){
+        try{
+            if(this._id_ > 0){
+                this._id_ = id;
+            }
+        }catch(e){
+            console.log(e);
+            return;
+        }
+    }
+
+    public addEdge(edge: number): number {
         try {
             if (this.edges) {
                 this.edges.push(edge);
@@ -18,10 +42,12 @@ export class Vertex implements IVertex {
         }
         catch (e) {
             console.log(e);
+            return -1;
         }
+        return 0;
     }
 
-    removeEdge(edge: number) {
+    public removeEdge(edge: number): number {
         try {
             if (this.edges) {
                 this.edges = this.edges.filter(vEdge => vEdge !== edge);
@@ -29,11 +55,12 @@ export class Vertex implements IVertex {
         }
         catch (e) {
             console.log(e);
+            return -1;
         }
-
+        return 0;
     }
 
-    toggleBlock() {
+    public toggleBlock(): number {
         let { blocked } = this.payload;
         if (blocked === true) {
             this.payload.blocked = false
@@ -41,13 +68,13 @@ export class Vertex implements IVertex {
         else {
             this.payload.blocked = true;
         }
-        return blocked;
+        return 0;
     }
 
-    unBlock() {
+    public unBlock(): number {
         let { blocked } = this.payload;
         blocked = false;
-        return blocked;
+        return 0;
     }
 
 }

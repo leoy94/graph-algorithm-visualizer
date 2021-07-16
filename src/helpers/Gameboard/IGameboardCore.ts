@@ -10,5 +10,6 @@ export interface IGameboardCore {
 
     algs?: any;
     currentAlg: string;
-    // animator?: GraphAnimator;
+
+    createGameboard(): IAdjList;
 }
